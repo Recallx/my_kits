@@ -5,8 +5,7 @@ kits.randonInt = function(n,m){
     return Math.floor(Math.random() * (m - n + 1 )+ n )
 }
 //封装一个获取时间的效果
-let Lits = {};
-Lits.formateDate = function(){
+kits.formateDate = function(){
     let date = new Date;
     let y = date.getFullYear();
     let M = date.getMonth() + 1 ;
@@ -15,4 +14,8 @@ Lits.formateDate = function(){
     let F = date.getMinutes();
     let m = date.getSeconds();
     return y + '-' + M + '-' + D + '  ' + S +':' + F + ':' + m ;
+}
+//封装一个获取随机数的函数
+kits.primarykey = function(n,m){
+    return Math.floor(Math.random() * (m - n + 1)+ n )
 }
