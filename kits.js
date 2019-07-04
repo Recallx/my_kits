@@ -5,7 +5,7 @@ kits.randonInt = function(n,m){
     return Math.floor(Math.random() * (m - n + 1 )+ n )
 }
 //封装一个获取时间的效果
-let kits = {}
+let kits = {};
 kits.formateDate = function(){
     let date = new Date;
     let y = date.getFullYear();
